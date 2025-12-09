@@ -35,7 +35,7 @@ final class _DiScopeAsyncImplState
 
   @override
   DiscoScopeAsync _createScope(DiscoScope? parent) => DiscoScopeAsync(
-    widget.name ?? 'DiscoScopeAsync#${DateTime.now().microsecondsSinceEpoch}',
+    widget.name ?? 'DiscoScopeAsync#${widget.hashCode}',
     inheritanceType: widget.inheritanceType,
     parent: parent,
   );

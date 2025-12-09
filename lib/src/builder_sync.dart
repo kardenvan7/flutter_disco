@@ -22,7 +22,7 @@ final class _DiScopeStateSync
     extends DiScopeState<_DiscoScopeBuilderSync, DiscoScopeSync> {
   @override
   DiscoScopeSync _createScope(DiscoScope? parent) => DiscoScopeSync(
-    widget.name ?? 'DiScopeSync#${DateTime.now().microsecondsSinceEpoch}',
+    widget.name ?? 'DiScopeSync#${widget.hashCode}',
     inheritanceType: widget.inheritanceType,
     parent: parent,
   );
