@@ -7,7 +7,7 @@ import '../helper_widgets.dart';
 
 void main() {
   Widget getUut(DiscoModule module, Widget Function(BuildContext) builder) =>
-      DiscoScopeBuilder(create: () => module, builder: builder);
+      DiscoScopeBuilder(create: (_) => module, builder: builder);
 
   const notFoundText = 'Not found';
 

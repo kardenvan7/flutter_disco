@@ -9,7 +9,7 @@ final class _DiscoScopeBuilderSync extends DiscoScopeBuilder {
     super.key,
   }) : super._();
 
-  final DiscoModule Function() create;
+  final DiscoModule Function(BuildContext) create;
   final DiscoInheritanceType? inheritanceType;
   final String? name;
 
@@ -29,7 +29,7 @@ final class _DiScopeStateSync
 
   @override
   void _initializeScope(DiscoScopeSync scope, bool isReinit) {
-    final module = widget.create();
+    final module = widget.create(context);
 
     module.configure(scope, scope);
     scope.initialize();

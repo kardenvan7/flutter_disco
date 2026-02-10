@@ -31,7 +31,7 @@ abstract class DiscoScopeBuilder extends StatefulWidget {
   /// asynchronous initialization.
   ///
   const factory DiscoScopeBuilder({
-    required DiscoModule Function() create,
+    required DiscoModule Function(BuildContext) create,
     required Widget Function(BuildContext) builder,
     String? name,
     DiscoInheritanceType? inheritanceType,
